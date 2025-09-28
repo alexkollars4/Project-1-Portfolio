@@ -1,58 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Projects</title>
 
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-    />
-    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Projects</title>
 
-    <link href="style.css" rel="stylesheet" />
-  </head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
 
-  <!-- Toggle light-page ↔ dark-page -->
+  <link href="style.css" rel="stylesheet" />
+</head>
 
-  <body class="light-page">
-    <!-- Navbar gets added here -->
-    <div id="nav-placeholder"></div>
+<!-- Toggle light-page ↔ dark-page -->
 
-    <!-- Main content -->
-    <main class="container py-4">
-      <h1 class="mb-2">Projects</h1>
-      <p class="mb-3">
-        This paragraph uses the page text color. Here’s a
-        <a href="#">content link</a>.
-      </p>
+<body class="light-page">
+  <!-- Navbar gets added here -->
+  <div id="nav-placeholder"></div>
+
+  <!-- Main content -->
+  <main class="container py-4">
+    <h1 class="mb-2">Projects</h1>
+    <p class="mb-4">
+      Welcome to my projects page! Here, you'll find a selection of my work
+      that showcases my skills and experience in various areas.
 
       <!-- Box -->
-      <div class="box mb-4">
-        <h3 class="h5">First Project</h3>
-        <p class="mb-0">
-          This is a plain div styled as a surface. <a href="#">Read more</a>
-        </p>
-      </div>
-      <div class="box mb-4">
-        <h3 class="h5">Second Project</h3>
-        <p class="mb-0">
-          This is a plain div styled as a surface. <a href="#">Read more</a>
-        </p>
-      </div>
-      <div class="box mb-4">
-        <h3 class="h5">Third Project</h3>
-        <p class="mb-0">
-          This is a plain div styled as a surface. <a href="#">Read more</a>
-        </p>
-      </div>
-    </main>
+    <div class="box mb-4">
+      <div class="row align-items-center">
+        <!-- Left column: Text -->
+        <div class="col-md-8">
+          <h3 class="h5">Building a Bicycle</h3>
+          <p class="mb-0">
+            I like to think of myself as a mechanically inclined person so when I was younger I got a used (and abused)
+            single speed bicycle from a donation place. I along with some help from my dad rebuilt the whole thing.
+            That means all new bearings, brakes, a fresh paint job, and new chain and sprockets.
+            This was a cool project for me and it taught me about using tools and how things work mechanically.
+            It also taught me some lessons on lead time as I had to wait for parts to come in the mail.
+          </p>
+        </div>
 
-    <script>
-      // Load only the #site-nav element
-      $("#nav-placeholder").load("navbar.html #site-nav");
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+        <!-- Right column: Skills -->
+        <div class="col-md-4 text-center">
+          <h4 class="h6 mb-3">Skills Learned</h4>
+          <ul class="list-unstyled text-start d-inline-block fw-normal">
+            <li>Mechanical Repair</li>
+            <li>Tool Use</li>
+            <li>Problem Solving</li>
+            <li>Lead Times</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="box mb-4">
+      <h3 class="h5">Second Project</h3>
+      <p class="mb-0">
+        This is a plain div styled as a surface. <a href="#">Read more</a>
+      </p>
+    </div>
+    <div class="box mb-4">
+      <h3 class="h5">Third Project</h3>
+      <p class="mb-0">
+        This is a plain div styled as a surface. <a href="#">Read more</a>
+      </p>
+    </div>
+  </main>
+
+  <script>
+    // Load only the #site-nav element
+    $("#nav-placeholder").load("navbar.html #site-nav");
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>
